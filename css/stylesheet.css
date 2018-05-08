@@ -1,0 +1,195 @@
+/* RESET */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+  /* Cancel out some differences between browser defaults */
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+* {
+  /* The width of an element will be the size of its border box, not its content box (which is the normal default). */
+  box-sizing: border-box;
+}
+/* Form */
+img {
+  width: 100%;
+  align-self: center;
+}
+ul a {
+  text-decoration: none;
+}
+ul li {
+  list-style-type: none;
+}
+p {
+  line-height: 1.5rem;
+}
+/* Font */
+body, footer p {
+  font-family: "Broadway";
+}
+p {
+  font-family: "Myriad Pro";
+}
+h1 {
+  font-family:  "Algerian", "Broadway";
+  font-size: 3rem;
+}
+h2 {
+  font-family: "Algerian";
+  font-size: 2.2rem;
+  text-shadow: 5px 5px 5px #000;
+}
+nav {
+  font-size: 1.2rem;
+}
+header h1, main h2 {
+  text-align: center;
+}
+/* Layout */
+.flex,nav ul,footer ul {
+  display: flex;
+}
+header {
+  padding: 5px 0;
+}
+
+nav {
+  padding: 10px 0;
+  /* border-bottom: 2px solid #806543; */
+}
+nav ul {
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+nav li {
+  margin: 0 30px;
+}
+.content_wrapper {
+  width: 70%;
+  margin: auto;
+}
+
+main {
+  border-left: 5px solid rgba(37, 39, 77, 0.8);
+  border-right: 5px solid rgba(37, 39, 77, 0.8);
+  padding: 20px;
+}
+
+main > div {
+  align-items: center;
+  margin-bottom: 2em;
+}
+#musician_name_DIV {
+  width: 40%;
+  margin-right: 1em;
+}
+
+#musician_discription_DIV {
+  width: 60%;
+  border-radius: 7px;
+}
+
+#musician_pic_DIV{
+  width: 55%;
+  border-radius: 7px;
+}
+
+#musician_discription_DIV img {
+  padding: 8px;
+  align-self: flex-start;
+}
+#musician_discription_DIV p {
+  width: 55%;
+  padding: 8px;
+  border-radius: 0 5px  5px 0;
+}
+
+#video_DIV {
+  width: 40%;
+  padding: 8px;
+}
+
+footer {
+  padding: 5px 0;
+}
+footer ul {
+  justify-content: space-evenly;
+}
+
+/* Color */
+body {
+  color: #fff;
+  background: url(../images/vynil_image.png) repeat;
+  background-size: cover;
+  background-color: rgba(37, 39, 77, 1);
+}
+
+#main_wrapper {
+  background-color: rgba(170, 171, 187, 0.4);
+}
+ul a {
+  color: rgba(255, 255, 255, 1);
+}
+
+header {
+  background-color: rgba(37, 39, 77, 1);
+}
+header h1 {
+  color: #ffffff;
+  text-shadow: 5px 5px 5px #000;
+}
+nav {
+  background-color: #25274d;
+}
+main {
+  background-color: rgba(70, 72, 102, 0.9);
+}
+footer {
+  background-color: #25274d;
+}
+
+#musician_discription_DIV {
+  /* background-color: #2e9cca; */
+  background-color: rgb(37, 39, 77);
+}
+#musician_pic_DIV{
+  background-color: rgb(46, 156, 202);
+}
+
+#musician_discription_DIV p {
+  /* background-color: #25274d; */
+}
+
+#video_DIV {
+  /* background-color: #2e9cca; */
+  background-color: rgb(41, 100, 138);
+
+}
+
+.selected,nav a:hover {
+  color: #f7931e;
+  text-shadow: 5px 5px 5px #000000;
+}
+/******************************************/
+#TEST {
+  width: 50%;
+  background-color: rgb(37, 39, 77);
+  margin-right: 2rem;
+  border-radius: 7px;
+}
+#TEST p {
+  padding: 8px;
+}
+
+#video_DIV {
+  width: 50%;
+  border-radius: 7px;
+}
+/*****************************************/
+
+@media screen and (max-width: 68em) {
+}
