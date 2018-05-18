@@ -16,7 +16,8 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, f
 /* Form */
 img {
   width: 100%;
-  align-self: center;
+  /* align-self: center; */
+  margin:auto;
 }
 ul a {
   text-decoration: none;
@@ -39,17 +40,33 @@ h1 {
   font-size: 3rem;
 }
 h2 {
-  font-family: "Algerian";
+  font-family: "Algerian", "Broadway";
   font-size: 2.2rem;
   text-shadow: 5px 5px 5px #000;
 }
+h3 {
+  font-family: "Algerian", "Broadway";
+  font-size: 2rem;
+}
+h4 {
+  font-family: "Algerian", "Broadway";
+  font-size: 1.5rem;
+}
+h5 {
+  font-family: "Myriad Pro";
+  font-size: 1.2rem;
+}
+main h5{
+  font-weight: bold;
+}
+
 nav {
   font-size: 1.2rem;
 }
 header h1, main h2 {
   text-align: center;
 }
-/* Layout */
+/*Layout*/
 .flex,nav ul,footer ul {
   display: flex;
 }
@@ -59,7 +76,8 @@ header {
 
 nav {
   padding: 10px 0;
-  /* border-bottom: 2px solid #806543; */
+  position: sticky;
+  top:0;
 }
 nav ul {
   justify-content: space-between;
@@ -69,7 +87,7 @@ nav li {
   margin: 0 30px;
 }
 .content_wrapper {
-  width: 70%;
+  width: 80%;
   margin: auto;
 }
 
@@ -77,45 +95,69 @@ main {
   border-left: 5px solid rgba(37, 39, 77, 0.8);
   border-right: 5px solid rgba(37, 39, 77, 0.8);
   padding: 20px;
+  align-items: center;
 }
 
 main > div {
-  align-items: center;
   margin-bottom: 2em;
 }
-#musician_name_DIV {
+#mainpage_welcome_FIG{
+  width: 95%;
+  margin:auto;
+}
+#main_inner_wrapper{
+  width: 95%;
+  margin: auto;
+}
+
+#main_introduction_div{
+  margin: auto;
+}
+
+#main_news_div{
+  width: 25%;
+  overflow: auto;
+  float: right;
+}
+
+#musician_name_div {
   width: 40%;
   margin-right: 1em;
 }
 
-#musician_discription_DIV {
+#musician_discription_div {
   width: 60%;
   border-radius: 7px;
 }
 
-#musician_pic_DIV{
+#musician_pic_div{
   width: 55%;
   border-radius: 7px;
 }
 
-#musician_discription_DIV img {
+#musician_discription_div img {
   padding: 8px;
   align-self: flex-start;
 }
-#musician_discription_DIV p {
+#musician_discription_div p {
   width: 55%;
   padding: 8px;
   border-radius: 0 5px  5px 0;
 }
 
-#video_DIV {
-  width: 40%;
+#video_div {
+  width: 50%;
   padding: 8px;
+  border-radius: 7px;
 }
 
 footer {
   padding: 5px 0;
 }
+footer img{
+  width: 2.5rem;
+}
+
 footer ul {
   justify-content: space-evenly;
 }
@@ -126,6 +168,7 @@ body {
   background: url(../images/vynil_image.png) repeat;
   background-size: cover;
   background-color: rgba(37, 39, 77, 1);
+  background-attachment: fixed;
 }
 
 #main_wrapper {
@@ -152,44 +195,23 @@ footer {
   background-color: #25274d;
 }
 
-#musician_discription_DIV {
-  /* background-color: #2e9cca; */
+
+#main_introduction_div, #musician_discription_div {
   background-color: rgb(37, 39, 77);
 }
-#musician_pic_DIV{
+#musician_pic_div{
   background-color: rgb(46, 156, 202);
 }
 
-#musician_discription_DIV p {
-  /* background-color: #25274d; */
-}
-
-#video_DIV {
-  /* background-color: #2e9cca; */
+#main_news_div,#video_div {
   background-color: rgb(41, 100, 138);
 
 }
 
-.selected,nav a:hover {
+.selected,nav a:hover,footer a:hover {
   color: #f7931e;
   text-shadow: 5px 5px 5px #000000;
 }
-/******************************************/
-#TEST {
-  width: 50%;
-  background-color: rgb(37, 39, 77);
-  margin-right: 2rem;
-  border-radius: 7px;
-}
-#TEST p {
-  padding: 8px;
-}
-
-#video_DIV {
-  width: 50%;
-  border-radius: 7px;
-}
-/*****************************************/
 
 @media screen and (max-width: 68em) {
 }
