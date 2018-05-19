@@ -12,59 +12,108 @@
 </head>
 
 <body>
-    <header>
-      <div class="content_wrapper">
-        <h1>Jazz Live</h1>
-      </div>
-      </header>
-    <nav>
-      <div class="content_wrapper">
-      <ul>
-        <li><a class="selected" href="index.html">Main Page</a></li>
-        <li><a href="musician.html">Musician</a></li>
-        <li><a href="about_us.html">About Us</a></li>
-        <li><a href="contact_us.html">Contact Us</a></li>
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
-      </div>
-    </nav>
-
-    <div id="main_wrapper">
-      <main class="content_wrapper">
-        <h2>Welcome to Jazz Live!</h2>
-        <figure id="mainpage_welcome_FIG">
-          <img  src="images/jazz_band.png" alt="jazz_band">
-        </figure>
-        <div id="main_inner_wrapper">
-          <div id="main_introduction_div">
-              <div id="main_news_div">
-                  <h4>News</h4>
-                    <h5>Latest album has realeased!</h5>
-                    <p>contentconten. tcontentcontentcontent</p>
-              </div>
-            <h3>What is Jazz Live</h3>
-            <p>Jazz Live is a place to share the beauty of jazz music to anyone who is interested in jazz music. No matter you are an jazz collector or a jazz beginner, this web   </p>
-            <h3>Goal</h3>
-            <p>placeholder</p>
-
-          </div>
-
-        </div>
-      </main>
+  <header>
+    <div class="content_wrapper">
+      <h1>Jazz Live</h1>
+      <a href="javascript:void(0)" onclick="openSideBar()">
+        <i id="menuIcon" class="fa fa-bars fa-3x">
+        </i>
+      </a>
     </div>
-    <footer>
-      <div class="content_wrapper">
+  </header>
+  <nav id="nav_bar">
+    <div class="content_wrapper">
       <ul>
-        <li><a href="placeholder.html"><i class="fa fa-twitter fa-2x"></i></a></li>
-        <li><a href="placeholder.html"><i class="fa fa-facebook fa-2x"></i></a></li>
-        <li><a href="placeholder.html"><i class="fa fa-rss fa-2x"></i></a></li>
-        <!-- <li><img src="images/twitter_logo_white_on_image.png" alt="twitter logo"></li> -->
-        <!-- <li><img src="images/facebook_logo.png" alt="facebook logo"></li> -->
-        <!-- <li><img src="images/rss_logo.png" alt="RSS logo"></li> -->
-        <li> <p>&copy;Jazz Live 2018. All rights reserved.</p></li>
+        <li>
+          <a class="selected" href="index.html">Main Page</a>
+        </li>
+        <li>
+          <a href="musicians.html">Musicians</a>
+        </li>
+        <li>
+          <a href="about_us.html">About Us</a>
+        </li>
+        <li>
+          <a href="contact_us.html">Contact Us</a>
+        </li>
+        <li>
+          <a href="blog.html">Blog</a>
+        </li>
       </ul>
+    </div>
+  </nav>
+
+  <div id="main_wrapper">
+    <main class="content_wrapper">
+      <h2>Welcome to Jazz Live!</h2>
+      <div id="main_content_div">
+        <div>
+          <figure id="mainpage_welcome_FIG">
+            <img src="images/jazz_band.png" alt="jazz_band">
+          </figure>
+
+          <div id="main_inner_wrapper">
+            <div id="main_introduction_div">
+              <h3>What is Jazz Live</h3>
+              <p>Jazz Live is a place to share the beauty of jazz music to everyone who is interested in jazz music. No matter you are an jazz collector or a jazz beginner, this is the place for you.</p> 
+              <p>The website provides information of talented jazz players around the world and their discography with featured recordings. In addition, We also have <a href="contact_us.html" class="emphasise_text">free newsletter</a> published fornightly. Don't miss the opportunity to follow the latest news of jazz music!</p>
+            </div>
+          </div>
+        </div>
+        <div id="main_news_div">
+          <h3>News</h3>
+          <h5>Highlight of the week</h5>
+          <p>This week's feature player is Coleman Hawkings. Remember to check the "musicians" page!</p>
+          <h5>Jazz Live is on air now!</h5>
+          <p>Stay tune for the following events!</p>
+        </div>
       </div>
-    </footer>
+    </main>
+  </div>
+  <footer>
+    <div class="content_wrapper">
+      <ul>
+        <li>
+          <a href="placeholder.html">
+            <i class="fa fa-twitter fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="placeholder.html">
+            <i class="fa fa-facebook fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="placeholder.html">
+            <i class="fa fa-rss fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <p>&copy;Jazz Live 2018. All rights reserved.</p>
+        </li>
+      </ul>
+      <!-- <li><img src="images/twitter_logo_white_on_image.png" alt="twitter logo"></li> -->
+      <!-- <li><img src="images/facebook_logo.png" alt="facebook logo"></li> -->
+      <!-- <li><img src="images/rss_logo.png" alt="RSS logo"></li> -->
+    </div>
+  </footer>
+
+  <script>
+    function openSideBar() {
+      let theSideBar = document.getElementById("nav_bar")
+      let navIcon = document.getElementById("menuIcon")
+
+      if (navIcon.className === "fa fa-bars fa-3x") {
+        navIcon.className = "fa fa-times fa-3x";
+        theSideBar.style.width = "65%";
+      }
+      else {
+        navIcon.className = "fa fa-bars fa-3x";
+        theSideBar.style.width = "0%";
+      }
+    }
+
+  </script>
 </body>
 
 </html>

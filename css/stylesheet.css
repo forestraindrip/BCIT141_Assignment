@@ -16,11 +16,14 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, f
 /* Form */
 img {
   width: 100%;
-  /* align-self: center; */
   margin:auto;
 }
-ul a {
+header i{
+  transition: 0.3s;
+}
+ul a ,main a{
   text-decoration: none;
+  transition: 0.3s;
 }
 ul li {
   list-style-type: none;
@@ -28,13 +31,18 @@ ul li {
 p {
   line-height: 1.5rem;
 }
+.emphasise_text{
+  font-weight: bold;
+  font-style: italic;
+}
 /* Font */
-body, footer p {
+body, footer p{
   font-family: "Broadway";
 }
 p {
   font-family: "Myriad Pro";
 }
+
 h1 {
   font-family:  "Algerian", "Broadway";
   font-size: 3rem;
@@ -56,6 +64,9 @@ h5 {
   font-family: "Myriad Pro";
   font-size: 1.2rem;
 }
+#main_news_div h5{
+  font-family:  "Algerian", "Broadway";
+}
 main h5{
   font-weight: bold;
 }
@@ -67,62 +78,76 @@ header h1, main h2 {
   text-align: center;
 }
 /*Layout*/
-.flex,nav ul,footer ul {
+.flex,nav ul,footer ul,#main_content_div{
   display: flex;
+  align-items: center;
 }
+main p:not(:last-child) {
+  margin-bottom: 0.5em;
+}
+
 header {
   padding: 5px 0;
 }
 
 nav {
-  padding: 10px 0;
+  padding: 5px 0;
   position: sticky;
   top:0;
 }
 nav ul {
-  justify-content: space-between;
+  justify-content: center;
   text-transform: uppercase;
 }
 nav li {
-  margin: 0 30px;
+  margin: 0 40px;
 }
+header a{
+  display: none;
+}
+
 .content_wrapper {
   width: 80%;
   margin: auto;
 }
 
 main {
-  border-left: 5px solid rgba(37, 39, 77, 0.8);
-  border-right: 5px solid rgba(37, 39, 77, 0.8);
-  padding: 20px;
+  border-left: 7px solid rgba(37, 39, 77, 0.8);
+  border-right: 7px solid rgba(37, 39, 77, 0.8);
+  padding: 0px 20px 10px 20px;
   align-items: center;
 }
 
 main > div {
-  margin-bottom: 2em;
+  margin-bottom: 10px;
+}
+main h2{
+  padding: 10px;
 }
 #mainpage_welcome_FIG{
-  width: 95%;
-  margin:auto;
+  margin: auto auto 10px auto;
 }
 #main_inner_wrapper{
-  width: 95%;
   margin: auto;
 }
 
 #main_introduction_div{
   margin: auto;
+  padding: 5px 15px;
+  border-radius: 7px
 }
 
 #main_news_div{
-  width: 25%;
-  overflow: auto;
-  float: right;
+  width: 40%;
+  margin-left: 15px;
+  padding: 5px 15px 15px;
+  align-self: flex-start;
+  border-radius: 7px
 }
 
 #musician_name_div {
   width: 40%;
-  margin-right: 1em;
+  margin-right: 10px;
 }
 
 #musician_discription_div {
@@ -152,20 +177,26 @@ main > div {
 }
 
 footer {
-  padding: 5px 0;
+  padding: 10px;
 }
 footer img{
   width: 2.5rem;
 }
 
-footer ul {
-  justify-content: space-evenly;
+footer div{
+  padding: 0 20px;
+}
+footer li:not(:last-child){
+  margin: 0  30px ;
+}
+footer li:last-child{
+  margin: auto 20px auto auto;
 }
 
 /* Color */
 body {
   color: #fff;
-  background: url(../images/vynil_image.png) repeat;
+  background: url(../images/vynil_image.png) ;
   background-size: cover;
   background-color: rgba(37, 39, 77, 1);
   background-attachment: fixed;
@@ -174,7 +205,7 @@ body {
 #main_wrapper {
   background-color: rgba(170, 171, 187, 0.4);
 }
-ul a {
+ul a,footer a,header a,main a {
   color: rgba(255, 255, 255, 1);
 }
 
@@ -195,7 +226,6 @@ footer {
   background-color: #25274d;
 }
 
-
 #main_introduction_div, #musician_discription_div {
   background-color: rgb(37, 39, 77);
 }
@@ -208,10 +238,67 @@ footer {
 
 }
 
-.selected,nav a:hover,footer a:hover {
+.selected, a:hover {
   color: #f7931e;
   text-shadow: 5px 5px 5px #000000;
 }
 
-@media screen and (max-width: 68em) {
+@media screen and (max-width: 60rem) {
+  /*Layout*/
+  .content_wrapper{
+    width: 100%;
+  }  
+  
+  header .content_wrapper{
+    display: flex;
+    width:100%;
+    padding: 0 15px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header{
+    position: sticky;
+    top: 0;
+  }
+  header a{
+    display: block;
+  }
+
+  nav{
+    display: block;
+    margin: 0 10px;
+    position: fixed;
+    top: 4rem;
+    right: 0;
+    transition: 0.5s;
+    white-space: nowrap;
+
+    width:0;
+  }
+  
+  nav ul{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav li{
+    margin: 0 0.5em 0.25em 0.5em;
+    font-size: 2rem;
+  }
+  #main_content_div, footer ul{
+    flex-wrap: wrap;
+  }
+
+  #main_introduction_div{
+    margin-bottom: 10px;
+  }
+  #main_news_div{
+    width: 100% ;
+    margin: auto;
+  }
+  footer .content_wrapper{
+    width: 100%;
+  }
+  footer li:not(:last-child), footer footer li:last-child{
+    margin: auto;
+  }
 }
