@@ -28,6 +28,7 @@ ul a ,main a{
 ul li {
   list-style-type: none;
 }
+
 p {
   line-height: 1.5rem;
 }
@@ -39,7 +40,7 @@ p {
 body, footer p{
   font-family: "Broadway";
 }
-p {
+p,main table td {
   font-family: "Myriad Pro";
 }
 
@@ -77,6 +78,13 @@ nav {
 header h1, main h2 {
   text-align: center;
 }
+.musician_name{
+  font-weight: bold;
+  font-size:1.2em;
+}
+table th{
+  font-size: 1.2em;
+}
 /*Layout*/
 .flex,nav ul,footer ul,#main_content_div{
   display: flex;
@@ -93,14 +101,15 @@ header {
 nav {
   padding: 5px 0;
   position: sticky;
+  white-space: nowrap;
   top:0;
 }
 nav ul {
-  justify-content: center;
+  justify-content: space-around;
   text-transform: uppercase;
 }
 nav li {
-  margin: 0 40px;
+  margin: 0 20px;
 }
 header a{
   display: none;
@@ -143,6 +152,38 @@ main h2{
   padding: 5px 15px 15px;
   align-self: flex-start;
   border-radius: 7px
+}
+
+#main_table_div{
+  width: 95%;
+  margin: auto;
+}
+main table,table td , table th{
+  border: 2px solid white;
+  border-collapse: collapse;
+}
+
+table th{
+  padding: 5px 10px;
+}
+
+table td{
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+.portrait_link img{
+  margin: 5px 0;
+  width:20%;
+}
+ .album_cover_td{
+  width:15%;
+  padding: 10px;
+}
+.length_td li{
+  list-style: none;
+  text-align: center;
 }
 
 #musician_name_div {
@@ -266,14 +307,11 @@ footer {
 
   nav{
     display: block;
-    margin: 0 10px;
     position: fixed;
     top: 4rem;
     right: 0;
-    transition: 0.5s;
-    white-space: nowrap;
-
     width:0;
+    transition: 0.3s;
   }
   
   nav ul{
@@ -295,6 +333,7 @@ footer {
     width: 100% ;
     margin: auto;
   }
+
   footer .content_wrapper{
     width: 100%;
   }
