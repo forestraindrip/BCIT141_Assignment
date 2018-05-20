@@ -199,7 +199,7 @@ table td{
 
 .portrait_link img{
   margin: 5px 0;
-  width:20%;
+  width:15%;
 }
  .album_cover_td{
   width:15%;
@@ -364,6 +364,7 @@ footer {
     right: 0;
     width:0;
     transition: 0.3s;
+    overflow: hidden;
   }
   
   nav ul,
