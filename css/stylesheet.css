@@ -37,6 +37,7 @@ p {
 .emphasise_text{
   font-weight: bold;
   font-style: italic;
+  text-decoration: underline;
 }
 /* Font */
 body, footer p{
@@ -225,7 +226,7 @@ table td{
 #musician_background_wrapper {
   align-items: flex-start;
   border-radius: 7px;
-  padding: 0 8px;
+  padding: 8px;
 }
 #musician_background_wrapper table{
   margin: 0 10px;
@@ -244,12 +245,12 @@ table td{
 #musician_discription_div img{
   width: 30%;
   float: right;
-  margin: 0 0 0 10px;
+  margin: 10px 0 10px 10px;
 }
 #musician_discription_div img:nth-child(even){
   width: 35%;
   float: left;
-  margin: 0 10px 0 0 ;
+  margin: 10px 10px 10px 0 ;
 }
 
 #musician_discography_wrapper{
@@ -391,7 +392,6 @@ footer {
   }
   #musician_pic_fig{
     width: 80%;
-    margin: 10px 0;
   }
   #musician_background_wrapper{
     align-self: center;
@@ -421,9 +421,9 @@ footer {
   }
   #musician_discription_div img,
   #musician_discription_div img:nth-child(even){
-    float: none;
-    width: 35%;
-    margin: 10px auto;
+    /* float: none; */
+    width: 40%;
+    /* margin: 0 10px; */
   }
 
   .portrait_link img{
