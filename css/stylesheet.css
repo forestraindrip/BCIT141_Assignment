@@ -183,7 +183,9 @@ main table,table td, table th{
   border-collapse: collapse;
 }
 #musician_background_wrapper table,
-#musician_background_wrapper table td{
+#musician_background_wrapper table *,
+#about_us_table,
+#about_us_table * {
   border: none;
 }
 
@@ -231,7 +233,8 @@ table td{
 #musician_background_wrapper table{
   margin: 0 10px;
 }
-#musician_background_wrapper table td{
+#musician_background_wrapper table *,
+#about_us_table *{
   vertical-align: text-top;
   text-align: left;
 }
