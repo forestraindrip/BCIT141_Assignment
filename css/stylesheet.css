@@ -37,7 +37,6 @@ p {
 .emphasise_text{
   font-weight: bold;
   font-style: italic;
-  text-decoration: underline;
 }
 /* Font */
 body, footer p{
@@ -442,9 +441,9 @@ footer {
   }
   #musician_discription_div img,
   #musician_discription_div img:nth-child(even){
-    /* float: none; */
-    width: 40%;
-    /* margin: 0 10px; */
+    float: none;
+    width: 80%;
+    margin: 10px auto;
   }
 
   .portrait_link img{
