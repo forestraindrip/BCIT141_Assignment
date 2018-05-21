@@ -45,7 +45,8 @@ body, footer p{
 }
 p,
 main table td,
-#musician_content_div li {
+#musician_content_div li,
+#contact_us_form{
   font-family: "Myriad Pro";
 }
 
@@ -265,6 +266,25 @@ table td{
   width: 80%;
   margin: auto auto 10px auto;
 }
+#contact_us_wrapper{
+  display: flex;
+  align-items: flex-start;
+}
+#contact_us_wrapper img{
+  width: 40%;
+}
+#contact_us_form{
+  width: 60%;
+  margin: auto;
+}
+
+#contact_us_form input:not(:last-child){
+  margin: 0 0 10px 0;
+}
+#textarea{
+  height:20rem;
+  width: 95%;
+}
 
 footer {
   padding: 10px;
@@ -400,7 +420,7 @@ footer {
     margin: auto auto 10px auto ;
   }
   #musician_background_wrapper table{
-    margin-bottom: 10px;
+    margin: 10px;
   }
   #musician_discography_wrapper {
     width: 100%;
@@ -429,6 +449,14 @@ footer {
   .portrait_link img{
     margin: 5px 0;
     width:35%;
+  }
+  
+  #contact_us_form{
+    width: 100%;
+  }
+
+  #contact_us_wrapper img{
+    display: none;
   }
 
   footer .content_wrapper{
