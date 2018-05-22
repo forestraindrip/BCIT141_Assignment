@@ -278,9 +278,10 @@ table td{
   margin: auto;
 }
 
-#contact_us_form input:not(:last-child){
-  margin: 0 0 10px 0;
+#contact_us_form > div{
+  margin-top: 0.25em;
 }
+
 #textarea{
   height:20rem;
   width: 95%;
