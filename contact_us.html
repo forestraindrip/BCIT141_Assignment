@@ -50,20 +50,36 @@
       <h2>Contact Us</h2>
       <div id="contact_us_wrapper">
         <form id="contact_us_form">
-          <p>Please enter your prefered name</p>
-          <input type="text" placeholder="Enter your name">
-          <br>
-          <p>Please enter your e-mail address</p>
-          <input type="email" placeholder="Enter your email">
-          <br>
-          <p>Message to us</p>
-          <textarea id="textarea" placeholder="Enter your message to us"></textarea>
-          <br>
-          <input type="checkbox" id="newsletter_chkbox">
-          <label for="newsletter_chkbox">Subscribe the newsletter of Jazz Live</label>
-          <br>
-          <input type="submit" value="Submit">
+          <div>
+            <label for="name_label">Your prefered name</label>
+          </div>
+          <div>
+            <input type="text" id="name_label" name="name_label" placeholder="Enter your name" required>
+          </div>
+
+          <div>
+            <label for="email_label">Your e-mail address</label>
+          </div>
+          <div>
+            <input type="email" id="email_label" name="email_label" placeholder="Enter your email" required>
+          </div>
+
+          <div>
+            <label for="textarea">Your message to us</label>
+          </div>
+          <div>
+            <textarea id="textarea" placeholder="Enter your message to us"></textarea>
+          </div>
+
+          <div>
+            <input type="checkbox" id="newsletter_chkbox">
+            <label for="newsletter_chkbox">I want to subscribe the newsletter from Jazz Live</label>
+          </div>
+          <div>
+            <input type="submit" value="Submit">
+          </div>
         </form>
+
         <img src="images/music_on_blackboard.jpg" alt="music_on_blackboard">
       </div>
     </main>
