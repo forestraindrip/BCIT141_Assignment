@@ -116,6 +116,7 @@ nav {
   position: sticky;
   white-space: nowrap;
   top:0;
+  border-bottom: 2px solid rgba(80, 80, 80,0.9);
 }
 nav ul {
   justify-content: space-around;
@@ -374,6 +375,7 @@ footer {
   header{
     position: sticky;
     top: 0;
+    border-bottom: 2px solid rgba(80, 80, 80,0.9);
   }
   #menuIcon{
     display: block;
@@ -387,6 +389,7 @@ footer {
     width:0;
     transition: 0.3s;
     overflow: hidden;
+    border-bottom: none;
   }
   
   nav ul,
