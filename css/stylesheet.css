@@ -140,7 +140,7 @@ main {
 }
 
 main > div {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 main h2{
   padding: 10px;
@@ -151,7 +151,7 @@ main h2{
 }
 
 #mainpage_welcome_FIG{
-  margin: auto auto 10px auto;
+  margin: auto auto 15px auto;
 }
 #main_inner_wrapper{
   margin: auto;
@@ -197,7 +197,7 @@ table td{
 }
 
 .portrait_link img{
-  margin: 5px 0;
+  margin: 5px 0 10px 0;
   width:15%;
 }
  .album_cover_td{
@@ -211,7 +211,7 @@ table td{
 
 #musician_name {
   width: 70%;
-  margin-right: 10px;
+  margin-right: 15px;
   align-self: center;
 }
 #musician_pic_fig{
@@ -228,7 +228,7 @@ table td{
   padding: 10px;
 }
 .musician_background_wrapper table{
-  margin: 0 10px;
+  margin: 0 15px;
 }
 .musician_background_wrapper table *,
 #about_us_table *{
@@ -239,23 +239,22 @@ table td{
 .musician_discription_div {
   max-width: 75%;
   border-radius: 7px;
-  margin-top: 10px;
   padding: 10px;
 }
 .musician_discription_div img{
   width: 30%;
   float: right;
-  margin: 10px 0 10px 10px;
+  margin: 5px 0 15px 15px;
 }
 .musician_discription_div img:nth-child(even){
   width: 35%;
   float: left;
-  margin: 10px 10px 10px 0 ;
+  margin: 5px 15px  15px 0  ;
 }
 
 .musician_discography_wrapper{
   border-radius: 7px;
-  margin: 10px 0 0 10px;
+  margin: 0 0 0 15px;
   padding: 0 10px;
   text-align: center;
   align-items: flex-start;
@@ -263,7 +262,7 @@ table td{
 
 .musician_discography_wrapper figure{
   width: 90%;
-  margin: auto auto 10px auto;
+  margin: auto auto 15px auto;
 }
 .recording_name{
   width: 70%;
@@ -276,13 +275,13 @@ table td{
 }
 .recording_description{
   width: 45%;
-  padding: 10px;
+  padding:10px;
   border-radius: 7px;
 }
 .recording_video_div{
   width: 55%;
   padding: 10px;
-  margin-left: 10px;
+  margin-left: 15px;
   border-radius: 7px;
   align-self: flex-start;
   text-align: center;
@@ -320,10 +319,10 @@ footer div{
   padding: 0 20px;
 }
 footer li:not(:last-child){
-  margin: 0  30px ;
+  margin: 0  15px ;
 }
 footer li:last-child{
-  margin: auto 20px auto auto;
+  margin: auto 15px auto auto;
 }
 
 /* Color */
@@ -414,7 +413,8 @@ footer,
   nav ul,
   .musician_content_div > div,
   .musician_background_wrapper,
-  .musician_discription_div{
+  .musician_discription_div,
+  .body_and_soul_page > div{
     flex-direction: column;
     align-items: flex-start;
     max-width: 100%;
@@ -429,7 +429,7 @@ footer,
   }
 
   #main_introduction_div{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   #main_news_div{
     width: 100% ;
@@ -442,7 +442,7 @@ footer,
     align-self: center;
     align-items: center;
     order: 1;
-    margin: auto auto 10px auto ;
+    margin: auto ;
   }
   .musician_background_wrapper table{
     margin: 10px;
@@ -450,7 +450,7 @@ footer,
   .musician_discography_wrapper {
     width: 100%;
     order: 2;
-    margin:auto;
+    margin:auto auto 15px auto;
   }
   .musician_discography_wrapper > div{
     display: flex;
@@ -468,11 +468,26 @@ footer,
   .musician_discription_div img:nth-child(even){
     float: none;
     width: 80%;
-    margin: 10px auto;
+    margin: 15px auto;
   }
-
+  .recording_name{
+    order: 1;
+    margin: auto;
+  }
+  .recording_cover_figure{
+    order: 2;
+    width: 80%;
+    margin: auto;
+  }
+  .recording_description{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .recording_video_div{
+    margin: auto;
+    width: 100%;
+  }
   .portrait_link img{
-    margin: 5px 0;
     width:35%;
   }
   
