@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Coleman Hawkings | Jazz Live</title>
+  <meta name="keywords" content="Jazz Live, Herbie Adderley, live jazz recording">
+  <meta name="description" content="Jazz live is a place about live jazz recordings and jazz musicians. The goal of Jazz Live is to share live jazz collection of Herbie Adderley, the founder of Jazz Live, to jazz lovers around the world.">
+  <meta name="author" content="Herbie Adderley">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <meta name="Viewport" content="width=device-width initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="content_wrapper">
+      <a href="index.html">
+        <h1>Jazz Live</h1>
+      </a>
+      <a href="javascript:void(0)" onclick="openSideBar()">
+        <i id="menuIcon" class="fa fa-bars fa-3x">
+        </i>
+      </a>
+    </div>
+  </header>
+  <nav id="nav_bar">
+    <div class="content_wrapper">
+      <ul>
+        <li>
+          <a href="index.html">Main Page</a>
+        </li>
+        <li>
+          <a href="recording_index.html">Recording Index</a>
+        </li>
+        <li>
+          <a href="about_us.html">About Us</a>
+        </li>
+        <li>
+          <a href="contact_us.html">Contact Us</a>
+        </li>
+        <li>
+          <a href="blog.html">Blog</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="main_wrapper">
+    <main class="content_wrapper body_and_soul_page">
+      <p>
+        <a href="recording_index.html" class="emphasise_text">Recording Index</a> >
+        <a href="coleman_hawkings.html" class="emphasise_text">Coleman Hawkings</a> > Body and Soul</p>
+      <div class="flex">
+        <figure class="recording_cover_figure">
+          <img src="images/body_and_soul/body_and_soul_cover.jpg" alt="Body and Soul cover">
+          <figcaption>Body and Soul cover</figcaption>
+        </figure>
+        <h2 class="recording_name">Body and Soul</h2>
+      </div>
+
+      <div class="flex">
+        <div class="recording_description">
+          <h4>History</h4>
+          <p>"Body and Soul" was written in New York City for the British actress and singer Gertrude Lawrence, who introduced
+            it to London audiences. Published in England, it was first performed in the United States by Libby Holman in
+            the 1930 Broadway revue Three's a Crowd. In Britain, the orchestras of Jack Hylton and Ambrose recorded the ballad
+            first in the same week in February 1930. In the United States, the tune grew quickly in popularity, and by the
+            end of 1930 at least 11 American bands had recorded it. Louis Armstrong was the first jazz musician to record
+            "Body and Soul", in October 1930, but it was Paul Whiteman and Jack Fulton who popularized it in United States.</p>
+          <p>"Body and Soul" remains a jazz standard, with hundreds of versions performed and recorded by dozens of artists.
+            Classic vocal recordings include those of Ella Fitzgerald, Annette Hanshaw, Billie Holiday, Billy Eckstine, Etta
+            James, Sarah Vaughan (for the 1957 album Swingin' Easy and the 1978 album How Long Has This Been Going On?) and
+            Frank Sinatra, and such musicians as Benny Goodman, Lee Konitz, Bill Evans, Russell Garcia (on his 1958 album
+            The Johnny Ever Greens, starring John Williams on piano and Don Fagerquist on trumpet), John Coltrane, (on his
+            1964 album, Coltrane's Sound,) Charles Mingus, Thelonious Monk, Stan Kenton, Royce Campbell, Steve Rochinski,
+            Lester Young and Gerry Mulligan contributed notable instrumental recordings. The Manhattan Transfer sang it on
+            their album Extensions in 1979, with lyrics honoring both Hawkins and Eddie Jefferson. Guitar legend Wes Montgomery
+            recorded it four times. To this day, "Body and Soul" is the most recorded jazz standard. (This is one of the
+            few big hits that had a number of different versions of the lyric.)</p>
+          <h3>Coleman Hawkins version</h3>
+          <p>One of the most famous and influential takes was recorded by Coleman Hawkins and His Orchestra on October 11, 1939,
+            at their only recording session for Bluebird, a subsidiary of RCA Victor. The recording is unusual in that the
+            song's melody is only hinted at in the recording; Hawkins' two-choruses of improvisation over the tune's chord
+            progression constitute almost the entire take. Because of this, as well as the imaginative use of harmony and
+            break from traditional swing cliches, the recording is recognised as part of the "early tremors of bebop". In
+            2004, the Library of Congress entered it into the National Recording Registry.</p>
+        </div>
+        <div class="recording_video_div">
+          <video controls>
+            <source src="media/coleman_hawkins_body[480x360].mp4" type="video/mp4">Your browser does not support the video tag.
+          </video>
+          <caption>Live of Body and Soul</caption>
+        </div>
+      </div>
+
+    </main>
+  </div>
+  <footer>
+    <div class="content_wrapper">
+      <ul>
+        <li>
+          <a href="placeholder.html">
+            <i class="fa fa-twitter fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="placeholder.html">
+            <i class="fa fa-facebook fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="placeholder.html">
+            <i class="fa fa-rss fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <p>&copy;Jazz Live 2018. All rights reserved.</p>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    function openSideBar() {
+      let theSideBar = document.getElementById("nav_bar")
+      let navIcon = document.getElementById("menuIcon")
+
+      if (navIcon.className === "fa fa-bars fa-3x") {
+        navIcon.className = "fa fa-times fa-3x";
+        theSideBar.style.width = "75%";
+      }
+      else {
+        navIcon.className = "fa fa-bars fa-3x";
+        theSideBar.style.width = "0%";
+      }
+    }
+
+  </script>
+</body>
+
+</html>
