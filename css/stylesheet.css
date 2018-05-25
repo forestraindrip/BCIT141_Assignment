@@ -416,10 +416,20 @@ footer,
   .musician_background_wrapper,
   .musician_discription_div,
   .body_and_soul_page > div,
-  .night_hawk_page > div{
+  .night_hawk_page > div,
+  .today_and_now_page > div{
     flex-direction: column;
     align-items: flex-start;
     max-width: 100%;
+  }
+
+  .recording_video_div{
+    order: 2;
+  }
+
+
+  .recording_description{
+    order: 3;
   }
 
   nav li{
@@ -486,7 +496,7 @@ footer,
     margin-bottom: 15px;
   }
   .recording_video_div{
-    margin: auto;
+    margin: auto auto 15px auto;
     width: 100%;
   }
   .portrait_link img{
