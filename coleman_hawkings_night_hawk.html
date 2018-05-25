@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Coleman Hawkings: Night Hawk | Jazz Live</title>
+  <meta name="keywords" content="Jazz Live, Herbie Adderley, live jazz recording">
+  <meta name="description" content="Jazz live is a place about live jazz recordings and jazz musicians. The goal of Jazz Live is to share live jazz collection of Herbie Adderley, the founder of Jazz Live, to jazz lovers around the world.">
+  <meta name="author" content="Herbie Adderley">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <meta name="Viewport" content="width=device-width initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="content_wrapper">
+      <a href="index.html">
+        <h1>Jazz Live</h1>
+      </a>
+      <a href="javascript:void(0)" onclick="openSideBar()">
+        <i id="menuIcon" class="fa fa-bars fa-3x">
+        </i>
+      </a>
+    </div>
+  </header>
+  <nav id="nav_bar">
+    <div class="content_wrapper">
+      <ul>
+        <li>
+          <a href="index.html">Main Page</a>
+        </li>
+        <li>
+          <a href="recording_index.html">Recording Index</a>
+        </li>
+        <li>
+          <a href="about_us.html">About Us</a>
+        </li>
+        <li>
+          <a href="contact_us.html">Contact Us</a>
+        </li>
+        <li>
+          <a href="blog.html">Blog</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="main_wrapper">
+    <main class="content_wrapper night_hawk_page">
+      <p>
+        <a href="recording_index.html" class="emphasise_text">Recording Index</a> >
+        <a href="coleman_hawkings.html" class="emphasise_text">Coleman Hawkings</a> > Night Hawk</p>
+      <div class="flex">
+        <figure class="recording_cover_figure">
+          <img src="images/night_hawk/night_hawk_cover.jpg" alt="Night Hawk cover">
+          <figcaption>Night Hawk cover</figcaption>
+        </figure>
+        <h2 class="recording_name">Night Hawk</h2>
+      </div>
+
+      <div class="flex">
+        <div class="recording_description">
+          <h3>History</h3>
+          <p>Night Hawk is an album by saxophonists Coleman Hawkins with Eddie "Lockjaw" Davis recorded at the end of 1960 and released on the Swingville label.</p>
+          <h3>Reception</h3>
+          <p>The AllMusic site awarded the album 4 stars stating "Hawkins was one of the main inspirations of his fellow tenor
+            Eddie "Lockjaw" Davis, so it was logical that they would one day meet up in the recording studio. This CD has
+            many fine moments from these two highly competitive jazzmen".</p>
+          <p></p>
+        </div>
+        <div class="recording_video_div">
+          <video controls>
+            <source src="media/night_hawk[1280x720].mp4" type="video/mp4">Your browser does not support the video tag.
+          </video>
+          <caption>Night Hawk</caption>
+        </div>
+      </div>
+
+    </main>
+  </div>
+  <footer>
+    <div class="content_wrapper">
+      <ul>
+        <li>
+          <a href="placeholder.html">
+            <i class="fa fa-twitter fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="placeholder.html">
+            <i class="fa fa-facebook fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="placeholder.html">
+            <i class="fa fa-rss fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <p>&copy;Jazz Live 2018. All rights reserved.</p>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    function openSideBar() {
+      let theSideBar = document.getElementById("nav_bar")
+      let navIcon = document.getElementById("menuIcon")
+
+      if (navIcon.className === "fa fa-bars fa-3x") {
+        navIcon.className = "fa fa-times fa-3x";
+        theSideBar.style.width = "75%";
+      }
+      else {
+        navIcon.className = "fa fa-bars fa-3x";
+        theSideBar.style.width = "0%";
+      }
+    }
+
+  </script>
+</body>
+
+</html>

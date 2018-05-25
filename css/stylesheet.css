@@ -414,7 +414,8 @@ footer,
   .musician_content_div > div,
   .musician_background_wrapper,
   .musician_discription_div,
-  .body_and_soul_page > div{
+  .body_and_soul_page > div,
+  .night_hawk_page > div{
     flex-direction: column;
     align-items: flex-start;
     max-width: 100%;
