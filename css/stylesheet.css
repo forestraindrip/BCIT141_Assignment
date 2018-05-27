@@ -279,7 +279,7 @@ table td{
   border-radius: 7px;
   align-self: flex-start;
 }
-.recording_video_div{
+.recording_media_div{
   width: 55%;
   padding: 10px;
   margin-left: 15px;
@@ -368,7 +368,7 @@ footer,
 
 #main_news_div, 
 .musician_discography_wrapper,
-.recording_video_div {
+.recording_media_div {
   background-color: rgb(41, 100, 138);
 
 }
@@ -423,7 +423,7 @@ footer,
     max-width: 100%;
   }
 
-  .recording_video_div{
+  .recording_media_div{
     order: 2;
   }
 
@@ -495,7 +495,7 @@ footer,
     width: 100%;
     margin-bottom: 15px;
   }
-  .recording_video_div{
+  .recording_media_div{
     margin: auto auto 15px auto;
     width: 100%;
   }
