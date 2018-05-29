@@ -309,6 +309,17 @@ table td{
   width: 95%;
 }
 
+.blog_content_div{
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.blog_content_div img{
+  width: 35%;
+  float: right;
+  margin-left: 15px;
+}
+
 footer {
   padding: 10px;
 }
@@ -358,7 +369,8 @@ footer,
 #main_introduction_div,
 .musician_discription_div,
 .musician_background_wrapper,
-.recording_description {
+.recording_description,
+.blog_content_div{
   background-color: rgb(37, 39, 77);
 }
 #musician_pic_fig,
@@ -368,7 +380,8 @@ footer,
 
 #main_news_div, 
 .musician_discography_wrapper,
-.recording_media_div {
+.recording_media_div,
+.blog_comment_div {
   background-color: rgb(41, 100, 138);
 
 }
@@ -509,6 +522,11 @@ footer,
 
   #contact_us_wrapper img{
     display: none;
+  }
+  .blog_content_div img{
+    width: 40%;
+    float: none;
+    margin: auto;
   }
 
   footer .content_wrapper{
