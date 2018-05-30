@@ -82,6 +82,7 @@ nav {
 }
 header h1, main h2 {
   text-align: center;
+  margin: auto;
 }
 
 table th{
@@ -268,11 +269,17 @@ table td{
   width: 45%;
   align-self: flex-start;
 }
-.recording_media_div{
+
+.table_and_media_wrapper{
   width: 55%;
   margin-left: 15px;
   align-self: flex-start;
   text-align: center;
+}
+
+.table_and_media_wrapper table{
+  width: 100%;
+  margin-bottom: 15px;
 }
 
 #contact_us_wrapper{
@@ -402,12 +409,14 @@ footer,
   nav{
     display: block;
     position: fixed;
-    top: 4rem;
+    top: 4.65rem;
     right: 0;
     width:0;
     transition: 0.3s;
     overflow: hidden;
-    border-bottom: none;
+    border-left: 2px solid rgba(80, 80, 80,0.9);
+    border-bottom: 2px solid rgba(80, 80, 80,0.9);
+
   }
   
   nav ul,
@@ -422,7 +431,7 @@ footer,
     max-width: 100%;
   }
 
-  .recording_media_div{
+  .table_and_media_wrapper{
     order: 2;
   }
 
@@ -494,7 +503,7 @@ footer,
     width: 100%;
     margin-bottom: 15px;
   }
-  .recording_media_div{
+  .table_and_media_wrapper{
     margin: auto auto 15px auto;
     width: 100%;
   }
