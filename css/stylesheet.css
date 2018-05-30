@@ -39,6 +39,15 @@ p {
   font-style: italic;
 }
 /* Font */
+@font-face{
+  font-family: "Broadway";
+  src: url(font/broadway.ttf);
+}
+@font-face{
+  font-family:"Algerian" ;
+  src: url(font/alger.ttf);
+}
+
 body, footer p{
   font-family: "Broadway";
 }
@@ -46,7 +55,7 @@ p,
 main table td,
 .musician_content_div li,
 #contact_us_form{
-  font-family: "Myriad Pro";
+  font-family: "Myriad Pro","Sans Serif";
 }
 
 h1 {
