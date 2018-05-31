@@ -220,18 +220,17 @@ table td{
   text-align: center;
 }
 
-#musician_name {
-  width: 70%;
-  margin-right: 15px;
-  align-self: center;
-}
 #musician_pic_fig{
   width: 30%;
   text-align: center;
   align-self: center;
 }
+.musician_name {
+  width: 45%;
+}
 
 .musician_background_wrapper {
+  width: 55%;
   align-items: flex-start;
 }
 .musician_background_wrapper table{
@@ -520,6 +519,14 @@ footer,
     width:35%;
   }
   
+  .musician_name {
+    width: 100%;
+  }
+  
+  .musician_background_wrapper {
+    width: 100%;
+  }
+
   #contact_us_form{
     width: 100%;
   }
