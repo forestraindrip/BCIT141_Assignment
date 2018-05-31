@@ -41,11 +41,11 @@ p {
 /* Font */
 @font-face{
   font-family: "Broadway";
-  src: url(font/broadway.ttf);
+  src: url(../font/broadway.ttf);
 }
 @font-face{
   font-family:"Algerian" ;
-  src: url(font/alger.ttf);
+  src: url(../font/alger.ttf);
 }
 
 body, footer p{
