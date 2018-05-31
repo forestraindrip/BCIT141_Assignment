@@ -37,6 +37,7 @@ p {
 .emphasise_text{
   font-weight: bold;
   font-style: italic;
+  font-size: 1.15em;
 }
 /* Font */
 @font-face{
@@ -46,6 +47,11 @@ p {
 @font-face{
   font-family:"Algerian" ;
   src: url(../font/alger.ttf);
+}
+
+@font-face{
+  font-family: "Myriad Pro";
+  src:url(../font/myriad_pro_regular.ttf);
 }
 
 body, footer p{
@@ -64,7 +70,7 @@ h1 {
 }
 h2 {
   font-family: "Algerian", "Broadway";
-  font-size: 2.2rem;
+  font-size: 2.3rem;
   text-shadow: 5px 5px 5px #000;
 }
 h3 {
@@ -245,12 +251,12 @@ table td{
 .musician_discription_div {
   max-width: 75%;
 }
-.musician_discription_div img{
+.musician_discription_div .paragraph_illustration{
   width: 30%;
   float: right;
   margin: 5px 0 15px 15px;
 }
-.musician_discription_div img:nth-child(even){
+.musician_discription_div .paragraph_illustration:nth-child(even){
   width: 35%;
   float: left;
   margin: 5px 15px  15px 0  ;
@@ -287,6 +293,10 @@ table td{
 
 .table_and_media_wrapper table{
   width: 100%;
+  margin-bottom: 15px;
+}
+#company_information_wrapper{
+  width: 26rem;
   margin-bottom: 15px;
 }
 
@@ -375,14 +385,18 @@ footer,
   background-color: rgb(37, 39, 77);
 }
 #musician_pic_fig,
-.recording_cover_figure{
+.recording_cover_figure,
+#company_information_wrapper
+{
   background-color: rgb(46, 156, 202);
 }
 
 #main_news_div, 
 .musician_discography_wrapper,
 .recording_media_div,
-.blog_comment_div {
+.blog_comment_div ,
+#founder_description_wrapper
+{
   background-color: rgb(41, 100, 138);
 
 }
@@ -492,12 +506,16 @@ footer,
   .musician_discription_div{
     order: 3;
   }
-  .musician_discription_div img,
-  .musician_discription_div img:nth-child(even){
+  .musician_discription_div .paragraph_illustration,
+  .musician_discription_div .paragraph_illustration:nth-child(even){
     float: none;
     width: 80%;
     margin: 15px auto;
   }
+  .musician_discription_div img{
+    width: 60%;
+  }
+
   .recording_name{
     order: 1;
     margin: auto;
@@ -516,7 +534,7 @@ footer,
     width: 100%;
   }
   .portrait_link img{
-    width:35%;
+    width:40%;
   }
   
   .musician_name {
@@ -526,7 +544,9 @@ footer,
   .musician_background_wrapper {
     width: 100%;
   }
-
+  #company_information_wrapper{
+    width: 100%;
+  }
   #contact_us_form{
     width: 100%;
   }
@@ -535,7 +555,7 @@ footer,
     display: none;
   }
   .blog_content_div img{
-    width: 40%;
+    width: 60%;
     float: none;
     margin: auto;
   }
