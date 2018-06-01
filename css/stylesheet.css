@@ -37,7 +37,7 @@ p {
 .emphasise_text{
   font-weight: bold;
   font-style: italic;
-  font-size: 1.15em;
+  font-size: 1.1em;
 }
 /* Font */
 @font-face{
@@ -320,7 +320,9 @@ table td{
   height:20rem;
   width: 95%;
 }
-
+.blog_comment_div {
+  display: inline-block;
+}
 
 .blog_content_div img{
   width: 35%;
@@ -563,7 +565,7 @@ footer,
   footer .content_wrapper{
     width: 100%;
   }
-  footer li:not(:last-child), footer footer li:last-child{
+  footer li:not(:last-child), footer li:last-child{
     margin: auto;
   }
 }
