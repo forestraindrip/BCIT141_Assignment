@@ -108,7 +108,7 @@ table th{
   font-size: 2.5rem;
 }
 /*Layout*/
-.united_div_layout{
+.unified_div_layout{
   padding: 10px;
   border-radius: 7px;
 }
@@ -261,11 +261,18 @@ table td{
   float: left;
   margin: 5px 15px  15px 0  ;
 }
+.interview_wrapper {
+  text-align: center;
+}
 
+.interview_wrapper,
 .musician_discography_wrapper{
-  margin: 0 0 0 15px;
+  margin: 0 0 15px 15px;
   text-align: center;
   align-items: flex-start;
+}
+.interview_wrapper > div:not(:last-child){
+  margin-bottom: 10px;
 }
 
 .musician_discography_wrapper figure{
@@ -388,7 +395,8 @@ footer,
 }
 #musician_pic_fig,
 .recording_cover_figure,
-#company_information_wrapper
+#company_information_wrapper,
+.interview_wrapper
 {
   background-color: rgb(46, 156, 202);
 }
@@ -491,10 +499,10 @@ footer,
   .musician_background_wrapper table{
     margin: 10px;
   }
+  .interview_wrapper,
   .musician_discography_wrapper {
     width: 100%;
-    order: 2;
-    margin:auto auto 15px auto;
+    margin: auto;
   }
   .musician_discography_wrapper > div{
     display: flex;
@@ -505,9 +513,17 @@ footer,
     max-width: 20rem; 
     padding:0 10px;
   }
-  .musician_discription_div{
-    order: 3;
+  #interview_and_album_wrapper,
+  .interview_wrapper{
+    margin-bottom: 15px;
   }
+  .musician_discription_div{
+    order:2;
+  }
+  .interview_and_album_wrapper{
+    order:1;
+  }
+  
   .musician_discription_div .paragraph_illustration,
   .musician_discription_div .paragraph_illustration:nth-child(even){
     float: none;
