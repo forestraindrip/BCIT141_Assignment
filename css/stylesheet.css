@@ -118,7 +118,9 @@ nav ul,
 footer ul,
 #main_content_div,
 .musician_content_div > div,
-.musician_background_wrapper{
+.musician_background_wrapper,
+#founder_wrapper
+{
   display: flex;
   align-items: center;
 }
@@ -303,8 +305,20 @@ table td{
   margin-bottom: 15px;
 }
 #company_information_wrapper{
-  width: 26rem;
+  display: inline-block;
   margin-bottom: 15px;
+}
+#founder_wrapper{
+  align-items:flex-start;
+}
+
+#founder_portrait_figure{
+  width: 35%;
+  text-align: center;
+  margin-right: 15px;
+}
+#founder_description_wrapper{
+  width: 65%;
 }
 
 #contact_us_wrapper{
@@ -389,14 +403,15 @@ footer,
 #main_introduction_div,
 .musician_discription_div,
 .musician_background_wrapper,
+#founder_description_wrapper,
 .recording_description,
 .blog_content_div{
   background-color: rgb(37, 39, 77);
 }
 #musician_pic_fig,
 .recording_cover_figure,
-#company_information_wrapper,
-.interview_wrapper
+.interview_wrapper,
+#founder_portrait_figure
 {
   background-color: rgb(46, 156, 202);
 }
@@ -405,7 +420,7 @@ footer,
 .musician_discography_wrapper,
 .recording_media_div,
 .blog_comment_div ,
-#founder_description_wrapper
+#company_information_wrapper
 {
   background-color: rgb(41, 100, 138);
 
@@ -457,7 +472,9 @@ footer,
   .musician_discription_div,
   .body_and_soul_page > div,
   .night_hawk_page > div,
-  .today_and_now_page > div{
+  .today_and_now_page > div,
+  #founder_wrapper
+  {
     flex-direction: column;
     align-items: flex-start;
     max-width: 100%;
@@ -540,7 +557,7 @@ footer,
   }
   .recording_cover_figure{
     order: 2;
-    width: 80%;
+    width: 75%;
     margin: auto;
   }
   .recording_description{
@@ -565,6 +582,15 @@ footer,
   #company_information_wrapper{
     width: 100%;
   }
+  #founder_portrait_figure{
+    margin: auto auto 15px auto;
+    width: 50%;
+  }
+
+  #founder_description_wrapper{
+    width: 100%;
+  }
+
   #contact_us_form{
     width: 100%;
   }
