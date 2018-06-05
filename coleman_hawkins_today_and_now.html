@@ -6,7 +6,8 @@
   <meta name="keywords" content="Jazz Live, Herbie Adderley, live jazz recording">
   <meta name="description" content="Jazz live is a place about live jazz recordings and jazz musicians. The goal of Jazz Live is to share live jazz collection of Herbie Adderley, the founder of Jazz Live, to jazz lovers around the world.">
   <meta name="author" content="Herbie Adderley">
-  <meta name="Viewport" content="width=device-width initial-scale=1.0">  <script src="js/jquery-3.3.1.min.js"></script>
+  <meta name="Viewport" content="width=device-width initial-scale=1.0">
+  <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,7 +21,7 @@
         <h1>Jazz Live</h1>
       </a>
       <a href="javascript:void(0)" onclick="openSideBar()">
-        <i id="menuIcon" class="fa fa-bars fa-3x">
+        <i id="menuIcon" class="fa fa-bars fa-2x">
         </i>
       </a>
     </div>
@@ -50,11 +51,15 @@
   <div id="main_wrapper">
     <main class="content_wrapper today_and_now_page">
       <p>
-        <a href="recording_index.html" >Recording Index</a> >
-        <a href="coleman_hawkins.html" >Coleman hawkins</a> > <span class="emphasise_text">Today and Now</span></p>
+        <a href="recording_index.html">Recording Index</a> >
+        <a href="coleman_hawkins.html">Coleman hawkins</a> >
+        <span class="emphasise_text">Today and Now</span>
+      </p>
       <div class="flex">
         <figure class="recording_cover_figure unified_div_layout">
-          <a data-fancybox="gallery" href="images/quartet_today_and_now/quartet_today_and_now_cover.jpg"><img src="images/quartet_today_and_now/quartet_today_and_now_cover.jpg" alt="Today and Now cover"></a>
+          <a data-fancybox="gallery" href="images/quartet_today_and_now/quartet_today_and_now_cover.jpg">
+            <img src="images/quartet_today_and_now/quartet_today_and_now_cover.jpg" alt="Today and Now cover">
+          </a>
           <figcaption>Today and Now cover</figcaption>
         </figure>
         <h2 class="recording_name">Today and Now</h2>
@@ -72,44 +77,44 @@
 
         </div>
         <div class="table_and_media_wrapper">
-            <table>
-                <thead>
-                  <tr>
-                    <th>Recording Name</th>
-                    <th>Length</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Go Li'l Liza</td>
-                    <td>6:25</td>
-                  </tr>
-                  <tr>
-                    <td>Quintessence</td>
-                    <td>4:46</td>
-                  </tr>
-                  <tr>
-                    <td>Don't Love Me</td>
-                    <td>4:40</td>
-                  </tr>
-                  <tr>
-                    <td>Love Song from "Apache"</td>
-                    <td>4:14</td>
-                  </tr>
-                  <tr>
-                    <td>Put on Your Old Grey Bonnett</td>
-                    <td>9:51</td>
-                  </tr>
-                  <tr>
-                    <td>Swingin' Scotch</td>
-                    <td>5:32</td>
-                  </tr>
-                  <tr>
-                    <td>Don't Sit Under the Apple Tree (With Anyone Else but Me)</td>
-                    <td>4:33</td>
-                  </tr>
-                </tbody>
-              </table>
+          <table>
+            <thead>
+              <tr>
+                <th>Recording Name</th>
+                <th>Length</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Go Li'l Liza</td>
+                <td>6:25</td>
+              </tr>
+              <tr>
+                <td>Quintessence</td>
+                <td>4:46</td>
+              </tr>
+              <tr>
+                <td>Don't Love Me</td>
+                <td>4:40</td>
+              </tr>
+              <tr>
+                <td>Love Song from "Apache"</td>
+                <td>4:14</td>
+              </tr>
+              <tr>
+                <td>Put on Your Old Grey Bonnett</td>
+                <td>9:51</td>
+              </tr>
+              <tr>
+                <td>Swingin' Scotch</td>
+                <td>5:32</td>
+              </tr>
+              <tr>
+                <td>Don't Sit Under the Apple Tree (With Anyone Else but Me)</td>
+                <td>4:33</td>
+              </tr>
+            </tbody>
+          </table>
           <div class="recording_media_div unified_div_layout">
             <video controls>
               <source src="media/coleman_hawkins quartet_go_lil_lisa.mp4" type="video/mp4">Your browser does not support the video tag.
@@ -140,6 +145,11 @@
           </a>
         </li>
         <li>
+          <a href="contact_us.html">
+            <i class="fa fa-envelope fa-2x"></i>
+          </a>
+        </li>
+        <li>
           <p>&copy;Jazz Live 2018. All rights reserved.</p>
         </li>
       </ul>
@@ -151,12 +161,12 @@
       let theSideBar = document.getElementById("nav_bar")
       let navIcon = document.getElementById("menuIcon")
 
-      if (navIcon.className === "fa fa-bars fa-3x") {
-        navIcon.className = "fa fa-times fa-3x";
-        theSideBar.style.width = "75%";
+      if (navIcon.className === "fa fa-bars fa-2x") {
+        navIcon.className = "fa fa-times fa-2x";
+        theSideBar.style.width = "80%";
       }
       else {
-        navIcon.className = "fa fa-bars fa-3x";
+        navIcon.className = "fa fa-bars fa-2x";
         theSideBar.style.width = "0%";
       }
     }

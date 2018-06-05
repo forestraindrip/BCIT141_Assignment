@@ -60,7 +60,8 @@ body, footer p{
 p,
 main table td,
 .musician_content_div li,
-#contact_us_form{
+#contact_us_form,
+#newsletter_subscription_form{
   font-family: "Myriad Pro","Sans Serif";
 }
 
@@ -103,10 +104,7 @@ header h1, main h2 {
 table th{
   font-size: 1.2em;
 }
-.musician_name,
-.recording_name{
-  font-size: 2.5rem;
-}
+
 /*Layout*/
 .unified_div_layout{
   padding: 10px;
@@ -333,12 +331,13 @@ table td{
   margin: auto;
 }
 
-#contact_us_form > div{
+#contact_us_form > div,
+#newsletter_subscription_form > div{
   margin-top: 0.25em;
 }
 
 #textarea{
-  height:20rem;
+  height:15rem;
   width: 95%;
 }
 .blog_comment_div {
@@ -432,6 +431,10 @@ footer,
 }
 
 @media screen and (max-width: 60rem) {
+  /*Font*/
+  header h1{
+    font-size: 2rem;
+  }
   /*Layout*/
   .content_wrapper{
     width: 100%;
@@ -456,7 +459,7 @@ footer,
   nav{
     display: block;
     position: fixed;
-    top: 4.65rem;
+    top: 3.375rem;
     right: 0;
     width:0;
     transition: 0.3s;

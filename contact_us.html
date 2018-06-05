@@ -6,7 +6,8 @@
   <meta name="keywords" content="Jazz Live, Herbie Adderley, live jazz recording">
   <meta name="description" content="Jazz live is a place about live jazz recordings and jazz musicians. The goal of Jazz Live is to share live jazz collection of Herbie Adderley, the founder of Jazz Live, to jazz lovers around the world.">
   <meta name="author" content="Herbie Adderley">
-  <meta name="Viewport" content="width=device-width initial-scale=1.0">  <script src="js/jquery-3.3.1.min.js"></script>
+  <meta name="Viewport" content="width=device-width initial-scale=1.0">
+  <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,7 +21,7 @@
         <h1>Jazz Live</h1>
       </a>
       <a href="javascript:void(0)" onclick="openSideBar()">
-        <i id="menuIcon" class="fa fa-bars fa-3x">
+        <i id="menuIcon" class="fa fa-bars fa-2x">
         </i>
       </a>
     </div>
@@ -50,8 +51,10 @@
   <div id="main_wrapper">
     <main class="content_wrapper">
       <h2>Contact Us</h2>
+
       <div id="contact_us_wrapper">
         <form id="contact_us_form" method="POST" action="mailto:herbie@jazzlive.org.nz">
+          <h3>Contact Us</h3>
           <div>
             <label for="name_input">Your prefered name</label>
           </div>
@@ -59,18 +62,12 @@
             <input type="text" id="name_input" name="name_input" placeholder="Enter your name" required>
           </div>
 
-          <div>
-            <label for="email_input">Your e-mail address</label>
-          </div>
-          <div>
-            <input type="email" id="email_input" name="email_input" placeholder="Enter your email" required>
-          </div>
 
           <div>
             <label for="textarea">Your message to us</label>
           </div>
           <div>
-            <textarea id="textarea" name="textarea" placeholder="Enter your message to us"></textarea>
+            <textarea id="textarea" name="textarea" placeholder="Enter your message to us" required></textarea>
           </div>
 
           <div>
@@ -84,6 +81,23 @@
 
         <img src="images/music_on_blackboard.jpg" alt="music_on_blackboard">
       </div>
+      <form id="newsletter_subscription_form" method="POST" action="mailto:herbie@jazzlive.org.nz">
+        <h3>Subscribe newsletter</h3>
+        <div>
+          <label for="email_input">Your e-mail address</label>
+        </div>
+        <div>
+          <input type="email" id="email_input" name="email_input" placeholder="Enter your email">
+        </div>
+        <div>
+          <p>
+            <span class="emphasise_text">No spam, ever. Your email address will only ever be used for Hiten’s Jazz Live.</span>
+          </p>
+        </div>
+        <div>
+          <input type="submit" id="subscribe_email_input" name="subscribe_email_input" value="Subscribe email">
+        </div>
+      </form>
     </main>
   </div>
   <footer>
@@ -105,6 +119,11 @@
           </a>
         </li>
         <li>
+          <a href="contact_us.html">
+            <i class="fa fa-envelope fa-2x"></i>
+          </a>
+        </li>
+        <li>
           <p>&copy;Jazz Live 2018. All rights reserved.</p>
         </li>
       </ul>
@@ -116,12 +135,12 @@
       let theSideBar = document.getElementById("nav_bar")
       let navIcon = document.getElementById("menuIcon")
 
-      if (navIcon.className === "fa fa-bars fa-3x") {
-        navIcon.className = "fa fa-times fa-3x";
-        theSideBar.style.width = "75%";
+      if (navIcon.className === "fa fa-bars fa-2x") {
+        navIcon.className = "fa fa-times fa-2x";
+        theSideBar.style.width = "80%";
       }
       else {
-        navIcon.className = "fa fa-bars fa-3x";
+        navIcon.className = "fa fa-bars fa-2x";
         theSideBar.style.width = "0%";
       }
     }

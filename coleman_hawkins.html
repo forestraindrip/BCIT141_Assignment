@@ -21,7 +21,7 @@
         <h1>Jazz Live</h1>
       </a>
       <a href="javascript:void(0)" onclick="openSideBar()">
-        <i id="menuIcon" class="fa fa-bars fa-3x">
+        <i id="menuIcon" class="fa fa-bars fa-2x">
         </i>
       </a>
     </div>
@@ -227,6 +227,16 @@
           </a>
         </li>
         <li>
+          <a href="contact_us.html">
+            <i class="fa fa-envelope fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="contact_us.html">
+            <i class="fa fa-envelope fa-2x"></i>
+          </a>
+        </li>
+        <li>
           <p>&copy;Jazz Live 2018. All rights reserved.</p>
         </li>
       </ul>
@@ -238,12 +248,12 @@
       let theSideBar = document.getElementById("nav_bar")
       let navIcon = document.getElementById("menuIcon")
 
-      if (navIcon.className === "fa fa-bars fa-3x") {
-        navIcon.className = "fa fa-times fa-3x";
-        theSideBar.style.width = "75%";
+      if (navIcon.className === "fa fa-bars fa-2x") {
+        navIcon.className = "fa fa-times fa-2x";
+        theSideBar.style.width = "80%";
       }
       else {
-        navIcon.className = "fa fa-bars fa-3x";
+        navIcon.className = "fa fa-bars fa-2x";
         theSideBar.style.width = "0%";
       }
     }
