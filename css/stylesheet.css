@@ -328,7 +328,7 @@ table td{
 }
 #contact_us_form{
   width: 60%;
-  margin: auto;
+  margin: auto 15px auto auto;
 }
 
 #contact_us_form > div,
@@ -404,7 +404,9 @@ footer,
 .musician_background_wrapper,
 #founder_description_wrapper,
 .recording_description,
-.blog_content_div{
+.blog_content_div,
+#contact_us_form
+{
   background-color: rgb(37, 39, 77);
 }
 #musician_pic_fig,
@@ -419,7 +421,8 @@ footer,
 .musician_discography_wrapper,
 .recording_media_div,
 .blog_comment_div ,
-#company_information_wrapper
+#company_information_wrapper,
+#newsletter_subscription_form
 {
   background-color: rgb(41, 100, 138);
 
@@ -596,6 +599,7 @@ footer,
 
   #contact_us_form{
     width: 100%;
+    margin: auto;
   }
 
   #contact_us_wrapper img{
