@@ -196,6 +196,11 @@ main table,table td, table th{
   border: 2px solid white;
   border-collapse: collapse;
 }
+
+.musician_content_div div:first-child{
+  padding-top: 10px;
+}
+
 .musician_background_wrapper table,
 .musician_background_wrapper table *,
 #about_us_table,
@@ -291,14 +296,14 @@ table td{
   align-self: flex-start;
 }
 
-.table_and_media_wrapper{
+.media_wrapper{
   width: 55%;
   margin-left: 15px;
   align-self: flex-start;
   text-align: center;
 }
 
-.table_and_media_wrapper table{
+.media_wrapper table{
   width: 100%;
   margin-bottom: 15px;
 }
@@ -477,8 +482,8 @@ footer,
   .musician_background_wrapper,
   .musician_discription_div,
   .body_and_soul_page > div,
-  .night_hawk_page > div,
-  .today_and_now_page > div,
+  .jumping_with_the_symphony_sid_page > div,
+  .lover_man_page > div,
   #founder_wrapper
   {
     flex-direction: column;
@@ -486,7 +491,7 @@ footer,
     max-width: 100%;
   }
 
-  .table_and_media_wrapper{
+  .media_wrapper{
     order: 2;
   }
 
@@ -570,7 +575,7 @@ footer,
     width: 100%;
     margin-bottom: 15px;
   }
-  .table_and_media_wrapper{
+  .media_wrapper{
     margin: auto auto 15px auto;
     width: 100%;
   }
