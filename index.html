@@ -51,7 +51,7 @@
   <div id="main_wrapper">
     <main class="content_wrapper">
       <h2>Welcome to Jazz Live!</h2>
-      <div id="main_content_div" class="no_top_margin">
+      <div id="main_content_div">
         <div>
           <figure id="mainpage_welcome_FIG">
             <img src="images/jazz_band.png" alt="jazz_band">
@@ -63,21 +63,35 @@
               <p>Jazz Live is a place to share the beauty of live jazz music to everyone who is interested in jazz music. No
                 matter you are an jazz collector or a jazz beginner, this is the place for you.</p>
               <p>The website provides information of talented jazz players around the world and their discography with featured
-                recordings. Moreover, we publish
-                <span>
-                  <a href="contact_us.html#newsletter_subscription_form" class="emphasise_text">free newsletter</a>
-                </span> fortnightly. Don't miss the opportunity to follow the latest news of jazz music!</p>
+                recordings. Moreover, we publish free newsletter fortnightly. Don't miss the opportunity to follow the latest news of jazz music!</p>
             </div>
           </div>
         </div>
-        <div id="main_news_div" class="unified_div_layout">
-          <h3>News</h3>
-          <h5>Highlight of the week</h5>
+        <div id="news_and_newsletter_wrapper">
+          <div id="main_news_div" class="unified_div_layout">
+            <h3>News</h3>
+            <h4>Highlight of the week</h4>
 
-          <p>This week's feature player is Coleman Hawkins. Remember to check the
-            <a href="coleman_hawkins.html" class="emphasise_text">page</a>!</p>
-          <h5>Jazz Live is on air now!</h5>
-          <p>Stay tune for the following events!</p>
+            <p>This week's feature player is Coleman Hawkins. Remember to check the
+              <a href="coleman_hawkins.html" class="emphasise_text">page</a>!</p>
+            <h4>Jazz Live is on air now!</h4>
+            <p>Stay tune for the following events!</p>
+          </div>
+          <form id="newsletter_subscription_form" method="POST" action="mailto:herbie@jazzlive.org.nz" class="unified_div_layout">
+            <h3>Subscribe newsletter</h3>
+            <div>
+              <label for="email_input">Your e-mail address</label>
+            </div>
+            <div>
+              <input type="email" id="email_input" name="email_input" placeholder="Enter your email">
+            </div>
+            <div>
+              <p>We value your privacy. We will not spam you or share your email address with anyone. Your email address will only ever be used for Jazz Live.</p>
+            </div>
+            <div>
+              <input type="submit" id="subscribe_email_input" name="subscribe_email_input" value="Subscribe email">
+            </div>
+          </form>
         </div>
       </div>
     </main>
