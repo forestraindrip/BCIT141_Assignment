@@ -292,12 +292,12 @@ table td{
   text-align: center;
 }
 .recording_description{
-  width: 45%;
+  width: 55%;
   align-self: flex-start;
 }
 
 .media_wrapper{
-  width: 55%;
+  width: 45%;
   margin-left: 15px;
   align-self: flex-start;
   text-align: center;
@@ -330,11 +330,12 @@ table td{
 }
 #contact_us_wrapper img{
   width: 40%;
+  margin: auto auto auto 15px ;
 }
 #contact_us_form{
   width: 60%;
-  margin: auto 15px auto auto;
 }
+
 
 #contact_us_form > div,
 #newsletter_subscription_form > div{
